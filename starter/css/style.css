@@ -127,6 +127,18 @@ body {
   } 
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); 
+  } 
+}
+
 
 /* sudo clases son un estado especial de un selector, las usamos para generar condiciones especiales */
 .btn:link,
@@ -137,6 +149,7 @@ body {
   display: inline-block;
   border-radius: 100px; /*esto hace el bordeado del boton */
   transition: all .2s;
+  position: relative;
 }
 
 .btn:hover {
@@ -154,3 +167,29 @@ body {
   color: #777;
 }
 
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* este indice indica la posicion de los elementos si uno está encima del otro */
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6); /* esto nos va a acrecentar el elemento */
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s; /* el .75s es un delay que hace q la figura aparezca mas tarde q las demas */
+  animation-fill-mode: backwards; /* esto va a hacer que se apliquen automaticamente los estilos hasta un 0% antes que comience la animacion */
+}
