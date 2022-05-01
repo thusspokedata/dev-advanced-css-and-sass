@@ -1,3 +1,5 @@
 cd starter/
+
 npm install node-sass --save-dev
-npm install jquery 
+
+npm install jquery --save
