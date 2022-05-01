@@ -4,7 +4,7 @@ npm install node-sass --save-dev
 
 npm install jquery --save
 
-npm install <em>in case I delete the node_modules folder</em>
+npm install <em>---in case I delete the node_modules folder---</em>
 
 npm run compile:sass
 
@@ -34,3 +34,5 @@ package.json:
 ```
 
 npm run compile:sass
+
+npm install live-server -g <em>---el -g implica instalarlo globalmente---</em>
