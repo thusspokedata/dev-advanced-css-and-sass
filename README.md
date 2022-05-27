@@ -19,9 +19,7 @@ advance-css-and-sass
 
 ```
 $ npm init
-$ npm install node-sass
 $ npm install node-sass --save-dev
-$ npm install jquery
 $ npm install jquery --save
 $ npm uninstall jquery --save
 
