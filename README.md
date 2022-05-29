@@ -245,3 +245,5 @@ body {
 
 
 ```
+
+<img src="https://github.com/thusspokedata/dev-advanced-css-and-sass/blob/main/images/grid.png" />
