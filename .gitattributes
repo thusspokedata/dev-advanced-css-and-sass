@@ -23,3 +23,4 @@ lib/* linguist-vendored
 spec/* linguist-vendored
 js/* linguist-vendored
 javascript/* linguist-vendored
+Natours/* linguist-vendored
